@@ -351,8 +351,16 @@ See [Security Hardening](#security-hardening) above.
 
 **Pattern:**
 ```
-Issue detected → Research the cause → Attempt fix → Test → Document
+Issue detected → Research the cause → Attempt fix → Test → Document → Report to user
 ```
+
+**⚠️ 必须汇报（新增）**
+修复后必须主动向用户汇报：
+- 做了什么修改
+- 为什么会这样改
+- 结果如何
+
+禁止静默修复后不告知用户。
 
 When something doesn't work, try 10 approaches before asking for help. Spawn research agents. Check GitHub issues. Get creative.
 
