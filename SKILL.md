@@ -137,12 +137,12 @@ workspace/
 
 ### Trigger — SCAN EVERY MESSAGE FOR:
 
-- ✏️ **Corrections** — "It's X, not Y" / "Actually..." / "No, I meant..."
-- 📍 **Proper nouns** — Names, places, companies, products
-- 🎨 **Preferences** — Colors, styles, approaches, "I like/don't like"
-- 📋 **Decisions** — "Let's do X" / "Go with Y" / "Use Z"
-- 📝 **Draft changes** — Edits to something we're working on
-- 🔢 **Specific values** — Numbers, dates, IDs, URLs
+- ✏️ **纠正** — "是X，不是Y" / "其实..." / "不对，我是说..." / "错了" / "不是这样"
+- 📍 **专有名词** — 人名、地名、公司名、产品名
+- 🎨 **偏好** — "我喜欢" / "我不喜欢" / "用X，不要Y" / "偏向X"
+- 📋 **决策** — "用X吧" / "就X了" / "决定用Y" / "定了"
+- 📝 **草稿修改** — 对正在写的东西做修改、编辑
+- 🔢 **具体数值** — 数字、日期、ID、URL等
 
 ### The Protocol
 
@@ -155,10 +155,10 @@ workspace/
 
 **Example:**
 ```
-Human says: "Use the blue theme, not red"
+人类说："用蓝色主题，不要红色"
 
-WRONG: "Got it, blue!" (seems obvious, why write it down?)
-RIGHT: Write to SESSION-STATE.md: "Theme: blue (not red)" → THEN respond
+错误："好的，蓝色！"（看起来太明显了，没必要写下来？）
+正确：写入 SESSION-STATE.md："主题：蓝色（不是红色）" → 然后回复
 ```
 
 ### Why This Works
@@ -206,9 +206,9 @@ The buffer is a file — it survives compaction. Even if SESSION-STATE.md wasn't
 
 **Auto-trigger when:**
 - Session starts with `<summary>` tag
-- Message contains "truncated", "context limits"
-- Human says "where were we?", "continue", "what were we doing?"
-- You should know something but don't
+- 消息包含"截断"、"上下文限制"、"达到上限"
+- 人类说"我们说到哪了？"、"继续"、"刚才在做什么？"
+- 你应该知道但不知道时
 
 ### Recovery Steps
 
